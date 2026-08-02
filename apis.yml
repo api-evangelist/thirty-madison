@@ -1,8 +1,23 @@
 aid: thirty-madison
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/thirty-madison.png
 name: Thirty Madison
-description: 'Thirty Madison is a company surfaced as a portfolio company of northzone and added to the
-  API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Thirty Madison is a US direct-to-consumer telehealth and digital-health company founded
+  in 2017 and headquartered in New York City. It operates a family of condition-focused virtual care
+  brands, including Keeps (hair loss), Cove (migraine), Facet (dermatology), and Nurx (sexual and
+  reproductive health), pairing online medical consultations with mail-order pharmacy fulfillment; the
+  company merged with Nurx in 2022. Thirty Madison publishes no public developer API program, so this
+  profile captures its public security-disclosure and domain-security posture rather than API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/thirty-madison/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Healthcare
+- Telehealth
+- Telemedicine
+- Digital Health
+- Direct-to-Consumer
+- Pharmacy
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/thirty-madison-vulnerability-disclosure.yml
+- type: Security
+  url: https://thirtymadison.com/security
+- type: DomainSecurity
+  url: security/thirty-madison-domain-security.yml
 - type: Website
   url: http://thirtymadison.com
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
